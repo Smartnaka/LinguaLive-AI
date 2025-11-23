@@ -98,7 +98,7 @@ const LiveSession: React.FC<LiveSessionProps> = ({ onExit }) => {
       saveCurrentSession();
     } else {
       // If we are reconnecting after an error or disconnect, save previous context if any
-      if (connectionState !== 'connected' && messages.length > 0) {
+      if (messages.length > 0) {
         saveCurrentSession();
       }
       connect();
