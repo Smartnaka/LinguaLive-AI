@@ -1,5 +1,5 @@
 import React from 'react';
-import { Globe, ArrowRight, Sparkles, MessageSquare, Headphones, Github, Linkedin, ChevronDown, Star, Settings, Mic, Zap } from 'lucide-react';
+import { Globe, ArrowRight, MessageSquare, Headphones, Github, Linkedin, ChevronDown, Star, Settings, Mic, Zap } from 'lucide-react';
 
 interface LandingPageProps {
   onStart: () => void;

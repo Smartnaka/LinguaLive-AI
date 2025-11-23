@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trash2, MessageSquare, Calendar, ChevronRight } from 'lucide-react';
-import { SessionData, Language } from '../types';
+import { SessionData } from '../types';
 import { LANGUAGES } from '../constants';
 
 interface HistoryPanelProps {

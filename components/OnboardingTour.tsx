@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, ChevronRight, ChevronLeft, Mic, Settings, MessageSquare, Sparkles } from 'lucide-react';
+import { X, ChevronRight, Mic, Settings, MessageSquare, Sparkles } from 'lucide-react';
 
 interface OnboardingTourProps {
   onComplete: () => void;
