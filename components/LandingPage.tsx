@@ -1,5 +1,6 @@
 import React from 'react';
 import { Globe, ArrowRight, MessageSquare, Headphones, Github, Linkedin, ChevronDown, Star, Settings, Mic, Zap } from 'lucide-react';
+import Logo from './Logo';
 
 interface LandingPageProps {
   onStart: () => void;
@@ -73,7 +74,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onStart }) => {
       <nav className="relative z-10 flex items-center justify-between px-4 md:px-6 py-6 max-w-7xl mx-auto w-full">
         <div className="flex items-center gap-2 md:gap-3">
           <div className="w-8 h-8 md:w-10 md:h-10 bg-[#E8F9F0] rounded-xl flex items-center justify-center shadow-sm">
-             <Globe className="w-5 h-5 md:w-6 md:h-6 text-[#00B84A]" />
+             <Logo className="w-5 h-5 md:w-6 md:h-6 text-[#00B84A]" />
           </div>
           <span className="text-lg md:text-xl font-bold tracking-tight text-[#0F172A]">
             LinguaLive

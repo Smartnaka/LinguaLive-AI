@@ -1,11 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Mic, MicOff, MessageSquare, Activity, AlertCircle, ArrowLeft, User, Sparkles, Settings2, X, Clock, Settings } from 'lucide-react';
+import { Mic, MicOff, MessageSquare, AlertCircle, ArrowLeft, User, Sparkles, Settings2, X, Clock, Settings } from 'lucide-react';
 import { useGeminiLive } from '../hooks/useGeminiLive';
 import AudioVisualizer from './AudioVisualizer';
 import SettingsPanel from './SettingsPanel';
 import HistoryPanel from './HistoryPanel';
 import SessionHistoryModal from './SessionHistoryModal';
 import OnboardingTour from './OnboardingTour';
+import Logo from './Logo';
 import { Language, VoiceName, LiveConfig, SessionData } from '../types';
 import { LANGUAGES } from '../constants';
 
@@ -161,7 +162,7 @@ const LiveSession: React.FC<LiveSessionProps> = ({ onExit }) => {
                 <ArrowLeft className="w-5 h-5" />
             </button>
             <div className="flex items-center gap-2">
-                <Activity className="w-5 h-5 text-[#00B84A]" />
+                <Logo className="w-5 h-5 text-[#00B84A]" />
                 <span className="font-bold text-[#0F172A]">LinguaLive</span>
             </div>
          </div>
@@ -237,7 +238,7 @@ const LiveSession: React.FC<LiveSessionProps> = ({ onExit }) => {
                 <ArrowLeft className="w-5 h-5" />
             </button>
             <div className="flex items-center gap-2 text-[#00B84A]">
-                <Activity className="w-6 h-6" />
+                <Logo className="w-6 h-6" />
                 <h1 className="text-xl font-bold text-[#0F172A]">
                     LinguaLive
                 </h1>
